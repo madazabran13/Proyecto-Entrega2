@@ -29,7 +29,7 @@ public  class Localidad {
 
     @Override
     public String toString() {
-        return "Ciudad: " + nombreCiudad + "\nDepartamento: " + nombreDepto;
+        return "\nCiudad: " + nombreCiudad + "\nDepartamento: " + nombreDepto;
     }
 
 }

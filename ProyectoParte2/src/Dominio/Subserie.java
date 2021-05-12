@@ -34,7 +34,7 @@ public class Subserie {
 
     @Override
     public String toString() {
-        return "Codigo: " + codigo + "\nDscripcion: " + descripcion;
+        return "\nCodigo: " + codigo + "\nDscripcion: " + descripcion;
     }
 
 }

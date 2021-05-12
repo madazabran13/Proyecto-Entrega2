@@ -51,7 +51,7 @@ public class Metadato_Documento {
 
     @Override
     public String toString() {
-        return "Datos: " + datos + "\nFechas: " + fechas + "\nForma Documento: " 
+        return "\nDatos: " + datos + "\nFechas: " + fechas + "\nForma Documento: " 
                 + formaDoc + "\nObservacion: " + observacion;
     }
   

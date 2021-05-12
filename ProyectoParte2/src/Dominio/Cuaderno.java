@@ -31,7 +31,7 @@ public class Cuaderno {
 
     @Override
     public String toString() {
-        return "Numero de cuaderno: " + numCuaderno + "\nDescripcion: " + descripcion;
+        return "\nNumero de cuaderno: " + numCuaderno + "\nDescripcion: " + descripcion;
     }
 
 }

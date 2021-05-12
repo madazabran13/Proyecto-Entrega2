@@ -98,7 +98,7 @@ public class VistaConsola {
     }
 
     public void imprimirTitulos2() {
-        System.out.println("\n CONSULTA DE REGISTRO \n");
+        System.out.println("\n CONSULTA DE PROCESO JUDICIAL \n");
         for (int i = 0; i < this.titulos2.length; i++) {
             System.out.println(this.titulos2[i]);
         }
@@ -233,6 +233,7 @@ public class VistaConsola {
         System.out.print("- Numero de radicacion (max 23): ");
         int numRadicacion = dato.nextInt();
         dato.nextLine();
+        
         System.out.println("----------------------------");
         
         System.out.println("\nLOCALIDAD");
@@ -259,7 +260,6 @@ public class VistaConsola {
         dato.nextLine();
         dj.setCodigo(codigo);
         
-
         System.out.print("- Categoria(municipal o circuito): ");
         String categoria = dato.next();
         dj.setCategoria(categoria);
@@ -352,7 +352,7 @@ public class VistaConsola {
 
     public void procesoDocumento() throws Excepciones_Datos {
         System.out.println("\n----------------------------");
-        System.out.println("REGISTRO DEL DOCUMENTO");
+        System.out.println("    REGISTRO DEL DOCUMENTO");
         System.out.println("----------------------------");
         System.out.println(" \nDATOS");
         d = new Dominio.Datos();
@@ -418,9 +418,12 @@ public class VistaConsola {
     public void mostrarRegistro() throws Excepciones_Datos {
         try {
             System.out.println("\n----------------------------");
-            System.out.println("      VISTA REGISTRO");
+            System.out.println("      VISTA PROCESO");
             System.out.println("----------------------------");
 
+            System.out.println("\nPROCESO");
+            System.out.println("\nNumero Radicado: " + p.getMetadato_Expediente().getNumradicado());
+            
             System.out.println("\nLOCALIDAD\n" + lc);
 
             System.out.println("\nDESPACHO JUDICIAL");
@@ -474,7 +477,7 @@ public class VistaConsola {
             if(encontrado == null){
                 System.out.println("Numero de radicado no encontrado");
             }else{
-                System.out.println("Numero de radicado "+numRadicado+" se encuentra registrado...");
+                System.out.println(encontrado);
             }
         }catch(Excepciones_Datos ex){
             System.out.println("Valores invalidos....");
@@ -491,7 +494,7 @@ public class VistaConsola {
             if(encontrado == null){
                 System.out.println("Demandado no encontrado");
             }else{
-                System.out.println(nombrePersona+" se encuentra registrado(a)...");
+                System.out.println(encontrado);
             }
         }catch(Excepciones_Datos ex){
             System.out.println("Demandado no encontrado..");
@@ -508,7 +511,7 @@ public class VistaConsola {
             if(encontrado == null){
                 System.out.println("Demandante no encontrado");
             }else{
-                System.out.println(nombrePersona+" se encuentra registrado(a)...");
+                System.out.println(encontrado);
             }
         }catch(Excepciones_Datos ex){
             System.out.println("Demandado no encontrado..");

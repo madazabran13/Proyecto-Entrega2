@@ -38,7 +38,7 @@ public  class Serie {
 
     @Override
     public String toString() {
-        return "Codigo: " + codigo + "\nDescripcion: " + descripcion;
+        return "\nCodigo: " + codigo + "\nDescripcion: " + descripcion;
     }
     
     

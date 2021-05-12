@@ -59,7 +59,7 @@ public class Datos {
 
     @Override
     public String toString() {
-        return "Nombre Documento: " + nombreDocumento + "\nNumero Paginas: " + numpaginas + 
+        return "\nNombre Documento: " + nombreDocumento + "\nNumero Paginas: " + numpaginas + 
                 "\nInicio: " + inicio + "\nFin: " + fin + "\nOrigen Documento: " + origenDocumento;
     }
 

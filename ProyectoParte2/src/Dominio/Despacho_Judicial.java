@@ -40,8 +40,8 @@ public class Despacho_Judicial {
 
     @Override
     public String toString() {
-        return "Nombre Despacho: " + nombreDespacho + "\nCodigo: " + codigo 
-                +"\nCategoria:" + categoria;
+        return "\nNombre Despacho: " + nombreDespacho + "\nCodigo: " + codigo 
+                +"\nCategoria: " + categoria;
     }
 
 }

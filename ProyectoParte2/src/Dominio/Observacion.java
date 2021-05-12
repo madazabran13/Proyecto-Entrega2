@@ -21,7 +21,7 @@ public class Observacion {
 
     @Override
     public String toString() {
-        return "Observacion: " + observacion;
+        return "\nObservacion: " + observacion;
     }
  
 }

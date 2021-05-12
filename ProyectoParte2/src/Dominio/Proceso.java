@@ -34,7 +34,7 @@ public class Proceso  {
 
     @Override
     public String toString() {
-        return "Metadato Expediente: " + metadato_Expediente + "\nMetadato Documento:" 
+        return "\nMetadato Expediente: " + metadato_Expediente + "\nMetadato Documento: " 
                 + metadato_Documento;
     }
 

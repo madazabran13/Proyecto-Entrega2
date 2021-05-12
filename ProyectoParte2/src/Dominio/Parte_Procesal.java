@@ -54,7 +54,7 @@ public class Parte_Procesal {
 
     @Override
     public String toString() {
-        return "Tipo Persona: " + tipoPersona + "\nNombre Persona:" + nombrePersona
+        return "\nTipo Persona: " + tipoPersona + "\nNombre Persona: " + nombrePersona
                 + "\nIdentificacion: " + identificacion + "\nTipo Identificacion: " + TipoId;
     }
 

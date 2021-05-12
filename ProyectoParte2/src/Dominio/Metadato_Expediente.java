@@ -13,6 +13,10 @@ public class Metadato_Expediente {
     private Cuaderno nCuaderno;
     private List<Parte_Procesal> ParteA;
     private List<Parte_Procesal> ParteB;
+
+    public Metadato_Expediente(int numradicado) {
+        this.numradicado = numradicado;
+    }
     
     public Metadato_Expediente() {
         this.ParteA = new ArrayList<>();
@@ -87,7 +91,7 @@ public class Metadato_Expediente {
 
     @Override
     public String toString() {
-        return "Numero Radicado:" + numradicado + "\nLocalidad: " + localidad 
+        return "\nNumero Radicado: " + numradicado + "\nLocalidad: " + localidad 
                 + "\nDespacho Judicial: " + despacho_Judicial + "\nSerie: " + serie 
                 + "Numero Cuaderno: " + nCuaderno + "\nDemandando: " + ParteA + "\nDemandante: " 
                 + ParteB;

@@ -32,7 +32,7 @@ public class FormaDoc  {
 
     @Override
     public String toString() {
-        return "Formato: " + formato + "\nTamaño: " + tamaño;
+        return "\nFormato: " + formato + "\nTamaño: " + tamaño;
     }
   
 }

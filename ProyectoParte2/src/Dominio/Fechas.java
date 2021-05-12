@@ -30,7 +30,7 @@ public class Fechas  {
 
     @Override
     public String toString() {
-        return "Fecha Creacion: " + fCreacion + "\nFecha Incorporacion: " + fIncorporacion;
+        return "\nFecha Creacion: " + fCreacion + "\nFecha Incorporacion: " + fIncorporacion;
     }
    
 }
